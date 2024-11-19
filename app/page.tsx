@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use clint";
+import ProjectGrid from "@/app/ProjectGrid";
 
 export default function Home() {
     return (
@@ -15,32 +16,7 @@ export default function Home() {
                 </main>
 
                 {/* Projects Grid */}
-                <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <div className="p-4 border rounded-md shadow hover:shadow-lg transition-shadow">
-                        <h2 className="text-xl font-semibold">Project 1</h2>
-                        <p className="text-sm mt-2">
-                            Brief description of the project. Click to learn more.
-                        </p>
-                    </div>
-                    <div className="p-4 border rounded-md shadow hover:shadow-lg transition-shadow">
-                        <h2 className="text-xl font-semibold">Project 2</h2>
-                        <p className="text-sm mt-2">
-                            Brief description of the project. Click to learn more.
-                        </p>
-                    </div>
-                    <div className="p-4 border rounded-md shadow hover:shadow-lg transition-shadow">
-                        <h2 className="text-xl font-semibold">Project 3</h2>
-                        <p className="text-sm mt-2">
-                            Brief description of the project. Click to learn more.
-                        </p>
-                    </div>
-                    <div className="p-4 border rounded-md shadow hover:shadow-lg transition-shadow">
-                        <h2 className="text-xl font-semibold">Project 4</h2>
-                        <p className="text-sm mt-2">
-                            Brief description of the project. Click to learn more.
-                        </p>
-                    </div>
-                </section>
+                <ProjectGrid/>
 
                 {/* Footer */}
                 <footer className="flex gap-6 items-center justify-center">
